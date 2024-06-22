@@ -11,10 +11,10 @@ function NavBar() {
         className="h-12 ml-4 mt-4"
       />
       <ul className="flex py-5 space-x-10 justify-end mr-11">
-        <NavLink className="cursor-pointer" to="/">Home</NavLink>
-        <NavLink className="cursor-pointer" to="/about">About</NavLink>
-        <NavLink className="cursor-pointer" to="/projects">Projects</NavLink>
-        <NavLink className="cursor-pointer" to="/contact">Contact</NavLink>
+        <NavLink className="cursor-pointer text-xl" to="/">Home</NavLink>
+        <NavLink className="cursor-pointer text-xl" to="/about">About</NavLink>
+        <NavLink className="cursor-pointer text-xl" to="/projects">Projects</NavLink>
+        <NavLink className="cursor-pointer text-xl" to="/experience">Experience</NavLink>
       </ul>
     </nav>
   );

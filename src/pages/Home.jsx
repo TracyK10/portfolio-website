@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import NavBar from "../components/NavBar";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect/dist/core";
-import "./Home.css"
+import "./Home.css";
 import Footer from "../components/Footer";
 
 function Home() {
@@ -38,7 +38,7 @@ function Home() {
             id="typewriter-name"
             ref={typewriterRef}
           ></h1>
-          <h3 className="description py-3 w-3/4">
+          <h3 className="description py-3 w-3/4 font-semi-bold">
             Currently a student developer at Moringa and SheCodes. I have a
             passion for creating innovative and efficient projects. I am looking
             forward to continuous learning and innovation in the tech industry.

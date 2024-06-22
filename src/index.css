@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,6 +11,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+body{
+  background-color: #f6e6bf;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p{
+  font-weight: 500;
+  font-size: 18px;
 }
 
 

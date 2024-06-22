@@ -1,5 +1,5 @@
 import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import Experience from "./pages/Experience";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
@@ -11,8 +11,8 @@ const routes = [
     errorElement: <ErrorPage />,
   },
   {
-    path: "/contact",
-    element: <Contact />,
+    path: "/experience",
+    element: <Experience />,
     errorElement: <ErrorPage />,
   },
   {
