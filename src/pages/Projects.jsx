@@ -7,6 +7,10 @@ import NavBar from "../components/NavBar";
 import SideNav from "../components/SideNav";
 import Footer from "../components/Footer"
 import "./Projects.css";
+import CoffeeShopPhoto from "../assets/coffee-shop.png"
+import LandingPagePhoto from "../assets/Landing-Page.png"
+import GamePhoto from "../assets/Dragon-game.png"
+import TemperatureConverterImage from "../assets/Temperature-converter.png"
 
 function Projects() {
   const projectArray = [
@@ -14,14 +18,14 @@ function Projects() {
       title: "Coffee Shop",
       description:
         "This is a simple website for a coffee shop that displays a menu of hot coffee drinks, allows users to search for specific drinks, and provides a feedback form for customers. The website is built using HTML, CSS, and JavaScript, and it utilizes the Bootstrap framework for styling and responsiveness.",
-      image: "/src/assets/coffee-shop.png",
+      image: CoffeeShopPhoto,
       link: "https://github.com/TracyK10/cafe-shop",
     },
     {
       title: "Product Landing Page",
       description:
         "This website utilizes HTML for structure, CSS for styling, and JavaScript for dynamic functionality. It integrates Bootstrap 5.3.2 for responsive design, Font Awesome 6.0.0 for icons, and Owl Carousel 2.3.4 for responsive sliders. The project includes index.html, styles.css, script.js, and an images/ directory, ensuring an organized file structure for easy navigation and maintenance.",
-      image: "/src/assets/Landing-Page.png",
+      image: LandingPagePhoto,
       link: "https://github.com/TracyK10/OIBSIP/tree/main/purrrfect-landing-page",
     },
     {
@@ -35,14 +39,14 @@ function Projects() {
       title: "Temperature converter",
       description:
         "A simple temperature converter web application where users can input a temperature value in either Celsius, Fahrenheit, or Kelvin, and convert it to the other two temperature units.",
-      image: "/src/assets/Temperature-converter.png",
+      image: TemperatureConverterImage,
       link: "https://github.com/TracyK10/OIBSIP/tree/main/temperature-converter",
     },
     {
       title: "Dragon Repeller RPG",
       description:
         "Dragon Repeller RPG is a text-based HTML, CSS and JavaScript game where players defeat a menacing dragon, navigate locations, and manage stats, weapons, and inventory. Explore, battle monsters, and make strategic decisions.",
-      image: "/src/assets/Dragon-game.png",
+      image: GamePhoto,
       link: "https://github.com/TracyK10/role-playing-game",
     },
     {

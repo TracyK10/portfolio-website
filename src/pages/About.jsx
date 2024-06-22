@@ -2,6 +2,10 @@
 import "./About.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import ProfilePhoto from "../assets/MY-PHOTO.JPG"
+import MoviePhoto from "../assets/movie.png"
+import TravelPhoto from "../assets/travel.png"
+import BookPhoto from "../assets/books.png"
 
 function About() {
 
@@ -12,7 +16,7 @@ function About() {
       </header>
       <main className="hero-section flex justify-evenly ml-28 mr-10 mt-32">
         <img
-          src="/src/assets/MY-PHOTO.JPG"
+          src={ProfilePhoto}
           alt="My Photo"
           className="w-96 h-90 object-cover rounded-md"
         />
@@ -50,7 +54,7 @@ function About() {
         <h2 className="text-amber-900">Other things I enjoy...</h2>
         <div className="flex flex-col space-y-10 items-center">
           <div className="flex items-center space-x-5 ml-32">
-            <img src="/src/assets/movie.png" alt="" className="w-80 h-90" />
+            <img src={MoviePhoto} alt="" className="w-80 h-90" />
             <p className="py-3 w-1/2">
               I love to watch TV shows and movies. Currently, I am obsessed with
               Kdramas. My favorite is twenty five twenty one. I also like to
@@ -58,7 +62,7 @@ function About() {
             </p>
           </div>
           <div className="flex items-center space-x-5 ml-32">
-            <img src="/src/assets/travel.png" alt="" className="w-80 h-90" />
+            <img src={TravelPhoto} alt="" className="w-80 h-90" />
             <p className="py-3 w-1/2">
               I love to travel. I have been to a few places outside of Kenya on
               school trips and to attend conferences such as the Sub-Saharan
@@ -66,7 +70,7 @@ function About() {
             </p>
           </div>
           <div className="flex items-center space-x-5 ml-32">
-            <img src="/src/assets/books.png" alt="" className="w-80 h-90" />
+            <img src={BookPhoto} alt="" className="w-80 h-90" />
             <p className="py-3 w-1/2">
               I love to read. I have read a few books and I am currently reading
               books by John Green such as Turtles All The Way Down.
