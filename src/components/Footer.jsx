@@ -1,10 +1,12 @@
+import Logo from "../assets/twk-high-resolution-logo-black-transparent.png";
+
 export default function Footer() {
   return (
     <footer className="relative flex flex-col items-center py-2 px-10">
       <div className="w-full border-t border-gray-600 mb-5"></div>
       <div className="flex justify-between items-center w-full">
         <img
-          src="/src/assets/twk-high-resolution-logo-black-transparent.png"
+          src={Logo}
           alt="TWK Logo"
           className="h-10"
         />
