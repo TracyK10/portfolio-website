@@ -1,0 +1,43 @@
+/* About.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.typewriter h2::after {
+  content: '|';
+  display: inline-block;
+  animation: blink 1s step-start infinite;
+}
+
+.hero-image {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 2rem; /* Space between the image and the text */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-32 {
+  margin-top: 8rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.text-amber-900 {
+  color: #b45309; /* Amber color */
+}
