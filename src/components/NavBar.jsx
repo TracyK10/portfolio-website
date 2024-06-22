@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom"
+import Logo from "../assets/twk-high-resolution-logo-black-transparent.png"
 
 
 function NavBar() {
   return (
     <nav className="flex justify-between">
       <img
-        src="/src/assets/twk-high-resolution-logo-black-transparent.png"
+        src={Logo}
         alt="my logo"
         className="h-12 ml-4 mt-4"
       />
