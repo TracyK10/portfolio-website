@@ -1,14 +1,12 @@
-// import { useEffect, useState } from "react";
 import "./About.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import ProfilePhoto from "../assets/MY-PHOTO.JPG"
-import MoviePhoto from "../assets/movie.png"
-import TravelPhoto from "../assets/travel.png"
-import BookPhoto from "../assets/books.png"
+import ProfilePhoto from "../assets/MY-PHOTO.JPG";
+import MoviePhoto from "../assets/movie.png";
+import TravelPhoto from "../assets/travel.png";
+import BookPhoto from "../assets/books.png";
 
 function About() {
-
   return (
     <div>
       <header>
@@ -21,7 +19,9 @@ function About() {
           className="w-96 h-90 object-cover rounded-md"
         />
         <div className="typewriter py-3 w-1/2">
-          <h2 className="text-amber-900">Hi, my name is Tracy Wanjiru Karanja</h2>
+          <h2 className="text-amber-900">
+            Hi, my name is Tracy Wanjiru Karanja
+          </h2>
           <p>
             I am currently a junior full-stack developer based in Nairobi,
             Kenya. I create visually appealing websites and love to indulge in
@@ -54,7 +54,7 @@ function About() {
         <h2 className="text-amber-900">Other things I enjoy...</h2>
         <div className="flex flex-col space-y-10 items-center">
           <div className="flex items-center space-x-5 ml-32">
-            <img src={MoviePhoto} alt="" className="w-80 h-90" />
+            <img src={MoviePhoto} alt="Movies" className="w-80 h-90" />
             <p className="py-3 w-1/2">
               I love to watch TV shows and movies. Currently, I am obsessed with
               Kdramas. My favorite is twenty five twenty one. I also like to
@@ -62,7 +62,7 @@ function About() {
             </p>
           </div>
           <div className="flex items-center space-x-5 ml-32">
-            <img src={TravelPhoto} alt="" className="w-80 h-90" />
+            <img src={TravelPhoto} alt="Travel" className="w-80 h-90" />
             <p className="py-3 w-1/2">
               I love to travel. I have been to a few places outside of Kenya on
               school trips and to attend conferences such as the Sub-Saharan
@@ -70,7 +70,7 @@ function About() {
             </p>
           </div>
           <div className="flex items-center space-x-5 ml-32">
-            <img src={BookPhoto} alt="" className="w-80 h-90" />
+            <img src={BookPhoto} alt="Books" className="w-80 h-90" />
             <p className="py-3 w-1/2">
               I love to read. I have read a few books and I am currently reading
               books by John Green such as Turtles All The Way Down.
