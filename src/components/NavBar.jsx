@@ -70,10 +70,70 @@ function NavBar() {
         </ul>
       </nav>
       {isOpen && (
-        <div
-          className="fixed inset-0 bg-lime-800 bg-opacity-90 opacity-90 z-0"
-          onClick={toggleMenu}
-        ></div>
+        <>
+          <div
+            className="fixed inset-0 bg-black opacity-50 z-10"
+            onClick={toggleMenu}
+          ></div>
+          <div
+            className="fixed inset-0 flex flex-col items-center z-20"
+            style={{ background: "#bbc5b3" }}
+          >
+            <button
+              className="absolute top-4 right-4 text-2xl font-bold focus:outline-none"
+              onClick={toggleMenu}
+            >
+              &times;
+            </button>
+            <ul className="flex flex-col space-y-4 mt-16">
+              <li>
+                <a
+                  href="#home"
+                  className="block py-2 text-xl font-semibold"
+                  onClick={toggleMenu}
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  className="block py-2 text-xl font-semibold"
+                  onClick={toggleMenu}
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  className="block py-2 text-xl font-semibold"
+                  onClick={toggleMenu}
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  className="block py-2 text-xl font-semibold"
+                  onClick={toggleMenu}
+                >
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#experience"
+                  className="block py-2 text-xl font-semibold"
+                  onClick={toggleMenu}
+                >
+                  Experience
+                </a>
+              </li>
+            </ul>
+          </div>
+        </>
       )}
     </>
   );
