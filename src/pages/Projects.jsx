@@ -1,9 +1,8 @@
-// import React from "react";
 import "./Projects.css";
-import CoffeeShopPhoto from "../assets/coffee-shop.png"
-import LandingPagePhoto from "../assets/Landing-Page.png"
-import GamePhoto from "../assets/Dragon-game.png"
-import TemperatureConverterImage from "../assets/Temperature-converter.png"
+import CoffeeShopPhoto from "../assets/coffee-shop.png";
+import LandingPagePhoto from "../assets/Landing-Page.png";
+import GamePhoto from "../assets/Dragon-game.png";
+import TemperatureConverterImage from "../assets/Temperature-converter.png";
 
 function Projects() {
   const projectArray = [
@@ -56,21 +55,26 @@ function Projects() {
       <div className="text-center my-5">
         <h1 className="text-4xl">Projects 💻</h1>
       </div>
-      <div className="grid grid-cols-3 m-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 m-8">
         {projectArray.map((project, id) => (
-          <div
-            key={id}
-            className="flex flex-col md:flex-row justify-center items-center"
-          >
-            <div>
-              <img src={project.image} alt={project.title} className="w-4/5" />
-              <strong>{project.title}</strong>
-              <p>{project.description}</p>
+          <div key={id} className="flex flex-col items-center">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full md:w-4/5"
+            />
+            <strong>{project.title}</strong>
+            <p>{project.description}</p>
+            <div className="flex space-x-3">
               <a href={project.link}>
-                <button className="py-2 px-5 rounded-2xl mx-3 ease-in-out duration-200">Source code</button>
+                <button className="py-2 px-5 rounded-2xl ease-in-out duration-200">
+                  Source code
+                </button>
               </a>
               <a href={project.link}>
-                <button className="py-2 px-5 rounded-2xl mx-3 ease-in-out duration-200">Demo</button>
+                <button className="py-2 px-5 rounded-2xl ease-in-out duration-200">
+                  Demo
+                </button>
               </a>
             </div>
           </div>

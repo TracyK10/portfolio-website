@@ -1,17 +1,17 @@
 import "./About.css";
 import ProfilePhoto from "../assets/MY-PHOTO.JPG";
-import Typewriter from "typewriter-effect"
+import Typewriter from "typewriter-effect";
 
 function About() {
   return (
     <div id="about">
-      <main className="hero-section flex justify-evenly ml-28 mr-10 mt-32">
+      <main className="hero-section flex flex-col md:flex-row justify-evenly ml-4 md:ml-28 mr-4 md:mr-10 mt-10 md:mt-32">
         <img
           src={ProfilePhoto}
           alt="My Photo"
-          className="w-96 h-90 object-cover rounded-md"
+          className="w-96 h-90 object-cover rounded-md mb-6 md:mb-0"
         />
-        <div className="typewriter py-3 w-1/2">
+        <div className="typewriter py-3 w-full md:w-1/2">
           <div className="text-4xl text-green-800 font-semibold mb-10">
             <Typewriter
               options={{
