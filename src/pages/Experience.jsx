@@ -19,6 +19,22 @@ function Experience() {
           </a>
         </div>
       </div>
+      <div className="flex flex-col md:flex-row items-center md:justify-between mt-10 md:mx-28">
+        <h2 className="text-center md:text-left md:w-1/4 mb-6 md:mb-0">
+          Frontend Intern
+        </h2>
+        <div className="md:ml-10 md:mr-10 mt-0">
+          <h4>Company: CodeAlpha</h4>
+          <p>
+            During my internship at CodeAlpha, I focused on frontend
+            development, working on various tasks to enhance my skills in
+            building user interfaces and creating seamless user experiences.
+          </p>
+          <a href="https://github.com/TracyK10/CodeAlpha_frontend_internship_tasks">
+            <button className="rounded-full mt-4 md:mt-0">View Projects</button>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

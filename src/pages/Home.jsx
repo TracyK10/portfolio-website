@@ -11,6 +11,7 @@ import Projects from "./Projects";
 import About from "./About";
 import Skills from "./Skills";
 import Experience from "./Experience";
+import Contact from "./Contact";
 
 function Home() {
   const typewriterRef = useRef(null);
@@ -58,16 +59,7 @@ function Home() {
       <Skills />
       <Experience />
 
-      <div className="text-center mt-32 mb-32">
-        <h2 className="text-green-900">Looking to collaborate?</h2>
-        <p className="text-green-800">
-          I am always open to new opportunities. Let's create something
-          together!
-        </p>
-        <Link to="/contact">
-          <button className="rounded-full drop-shadow-lg">Contact Me</button>
-        </Link>
-      </div>
+      <Contact />
       <Footer />
     </div>
   );
