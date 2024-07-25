@@ -1,11 +1,4 @@
 // import React from "react";
-import Tab from "react-bootstrap/Tab";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Nav from "react-bootstrap/Nav";
-import NavBar from "../components/NavBar";
-import SideNav from "../components/SideNav";
-import Footer from "../components/Footer"
 import "./Projects.css";
 import CoffeeShopPhoto from "../assets/coffee-shop.png"
 import LandingPagePhoto from "../assets/Landing-Page.png"
@@ -59,43 +52,30 @@ function Projects() {
   ];
 
   return (
-    <div>
-      <header>
-        <NavBar />
-      </header>
-      <div className="typewriter text-center my-5">
-        <h1>Projects</h1>
+    <div id="projects">
+      <div className="text-center my-5">
+        <h1 className="text-4xl">Projects 💻</h1>
       </div>
-      <Tab.Container defaultActiveKey="0">
-        <Row className="mx-3">
-          <Col sm={3}>
-            <Nav variant="pills" className="flex-column">
-              {projectArray.map((project, index) => (
-                <Nav.Item key={index}>
-                  <Nav.Link
-                    style={{ backgroundColor: "#948264", margin: "1px" }}
-                    eventKey={index.toString()}
-                  >
-                    {project.title}
-                  </Nav.Link>
-                </Nav.Item>
-              ))}
-            </Nav>
-          </Col>
-          <Col sm={9}>
-            <Tab.Content>
-              {projectArray.map((project, index) => (
-                <SideNav
-                  key={index}
-                  project={project}
-                  eventKey={index.toString()}
-                />
-              ))}
-            </Tab.Content>
-          </Col>
-        </Row>
-      </Tab.Container>
-      <Footer />
+      <div className="grid grid-cols-3 m-14">
+        {projectArray.map((project, id) => (
+          <div
+            key={id}
+            className="flex flex-col md:flex-row justify-center items-center"
+          >
+            <div>
+              <img src={project.image} alt={project.title} className="w-4/5" />
+              <strong>{project.title}</strong>
+              <p>{project.description}</p>
+              <a href={project.link}>
+                <button className="py-2 px-5 rounded-2xl mx-3 ease-in-out duration-200">Source code</button>
+              </a>
+              <a href={project.link}>
+                <button className="py-2 px-5 rounded-2xl mx-3 ease-in-out duration-200">Demo</button>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,17 +1,10 @@
 import "./About.css";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import ProfilePhoto from "../assets/MY-PHOTO.JPG";
-import MoviePhoto from "../assets/movie.png";
-import TravelPhoto from "../assets/travel.png";
-import BookPhoto from "../assets/books.png";
+import Typewriter from "typewriter-effect"
 
 function About() {
   return (
-    <div>
-      <header>
-        <NavBar />
-      </header>
+    <div id="about">
       <main className="hero-section flex justify-evenly ml-28 mr-10 mt-32">
         <img
           src={ProfilePhoto}
@@ -19,66 +12,34 @@ function About() {
           className="w-96 h-90 object-cover rounded-md"
         />
         <div className="typewriter py-3 w-1/2">
-          <h2 className="text-amber-900">
-            Hi, my name is Tracy Wanjiru Karanja
-          </h2>
+          <div className="text-4xl text-green-800 font-semibold mb-10">
+            <Typewriter
+              options={{
+                strings: "Hi again!",
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
           <p>
-            I am currently a junior full-stack developer based in Nairobi,
-            Kenya. I create visually appealing websites and love to indulge in
-            innovative ideas.
+            Thanks for scrolling this far! I'm a junior full-stack developer
+            from Nairobi, Kenya, creating eye-catching websites and diving into
+            innovative ideas. I started with SheCodes for front-end, Moringa
+            School for full-stack, and I'm now finishing my Mathematics and
+            Computer Science degree at Multimedia University. Initially drawn to
+            medicine, I discovered my true passion in programming
+            <span className="emphasis"> (and sometimes UI/UX)</span> and now
+            love solving real-world problems with code and connecting with
+            fellow tech enthusiasts.
           </p>
           <p>
-            I am always curious about tech. I have done Front-end development
-            with SheCodes Foundation, Full-stack development with Moringa school
-            and I am currently in my last year in Multimedia University doing
-            Mathematics and Computer Science.
-          </p>
-          <p>Why I got into software development you ask?</p>
-          <p>
-            I always wanted to make a difference in the world, leave a mark.
-            Growing up, I thought I could make a difference being in medicine
-            and I studied sciences a lot because I loved it. But as I got older,
-            I realized that my passion was not in medicine but in tech and I
-            found myself enjoying programming. Once I got into it, I just
-            naturally developed a passion for it, especially when I saw how
-            exciting it is to create solutions to the problems in the world with
-            just a few lines of code.
-          </p>
-          <p>
-            I aim to empower users, create connections with fellow developers
-            and enhance the way others interact with technology.
+            Other than coding, I watch tv shows, knit, workout and volunteer at
+            my church as a counsellor for teenagers.🤓 I've also been trying to
+            read more so feel free to reach out to me with any book
+            recommendations! ✨
           </p>
         </div>
       </main>
-      <div className="text-center mt-32 mb-32">
-        <h2 className="text-amber-900">Other things I enjoy...</h2>
-        <div className="flex flex-col space-y-10 items-center">
-          <div className="flex items-center space-x-5 ml-32">
-            <img src={MoviePhoto} alt="Movies" className="w-80 h-90" />
-            <p className="py-3 w-1/2">
-              I love to watch TV shows and movies. Currently, I am obsessed with
-              Kdramas. My favorite is twenty five twenty one. I also like to
-              listen to music during my free time.
-            </p>
-          </div>
-          <div className="flex items-center space-x-5 ml-32">
-            <img src={TravelPhoto} alt="Travel" className="w-80 h-90" />
-            <p className="py-3 w-1/2">
-              I love to travel. I have been to a few places outside of Kenya on
-              school trips and to attend conferences such as the Sub-Saharan
-              Model United Nations(SAIMUN) as a delegate in high school.
-            </p>
-          </div>
-          <div className="flex items-center space-x-5 ml-32">
-            <img src={BookPhoto} alt="Books" className="w-80 h-90" />
-            <p className="py-3 w-1/2">
-              I love to read. I have read a few books and I am currently reading
-              books by John Green such as Turtles All The Way Down.
-            </p>
-          </div>
-        </div>
-      </div>
-      <Footer />
     </div>
   );
 }

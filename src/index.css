@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #f6e6bf;
+  background-color: #bbc5b3;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,7 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 body{
-  background-color: #f6e6bf;
+  background-color: #bbc5b3;
   font-family: "Red Hat Display", sans-serif;
 }
 
@@ -24,7 +24,7 @@ p{
 
 
 #root{
-  background-color: #f6e6bf;
+  background-color: #bbc5b3;
 }
 
 a {
@@ -33,7 +33,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #948264;
+  color: #7e926d;
 }
 
 body {
@@ -56,14 +56,14 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #948264;
+  background-color: #7e926d;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
   border-color: #000000;
-  background-color: #f9f9f9;
-  color: #948264;
+  background-color: #fafaf9;
+  color: #7e926d;
 }
 button:focus,
 button:focus-visible {

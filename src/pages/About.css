@@ -41,3 +41,12 @@
 .text-amber-900 {
   color: #b45309; /* Amber color */
 }
+
+.name{
+  font-size: 2rem;
+}
+
+.emphasis{
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 1.3rem;
+}

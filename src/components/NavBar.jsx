@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+
 import Logo from "../assets/twk-high-resolution-logo-black-transparent.png"
 
 
@@ -11,10 +11,11 @@ function NavBar() {
         className="h-12 ml-4 mt-4"
       />
       <ul className="flex py-5 space-x-10 justify-end mr-11">
-        <NavLink className="cursor-pointer text-xl" to="/">Home</NavLink>
-        <NavLink className="cursor-pointer text-xl" to="/about">About</NavLink>
-        <NavLink className="cursor-pointer text-xl" to="/projects">Projects</NavLink>
-        <NavLink className="cursor-pointer text-xl" to="/experience">Experience</NavLink>
+        <a href="#home" className="cursor-pointer text-xl font-semibold">Home</a>
+        <a href="#projects" className="cursor-pointer text-xl font-semibold" >Projects</a>
+        <a href="#about" className="cursor-pointer text-xl font-semibold" >About</a>
+        <a href="#skills" className="cursor-pointer text-xl font-semibold" >Skills</a>
+        <a href="#experience" className="cursor-pointer text-xl font-semibold" >Experience</a>
       </ul>
     </nav>
   );
