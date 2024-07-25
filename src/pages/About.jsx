@@ -15,7 +15,7 @@ function About() {
           <div className="text-4xl text-green-800 font-semibold mb-10">
             <Typewriter
               options={{
-                strings: "Hi again!",
+                strings: "> Hi again!",
                 autoStart: true,
                 loop: true,
               }}
