@@ -20,7 +20,7 @@ function Projects() {
     {
       title: "Product Landing Page",
       description:
-        "This website utilizes HTML for structure, CSS for styling, and JavaScript for dynamic functionality. It integrates Bootstrap 5.3.2 for responsive design, Font Awesome 6.0.0 for icons, and Owl Carousel 2.3.4 for responsive sliders. The project includes index.html, styles.css, script.js, and an images/ directory, ensuring an organized file structure for easy navigation and maintenance.",
+        "This website uses HTML for structure, CSS for styling, and JavaScript for dynamic functionality. It integrates Bootstrap 5.3.2 for responsiveness, Font Awesome 6.0.0 for icons, and Owl Carousel 2.3.4 for sliders.",
       image: LandingPagePhoto,
       demo: "https://purrfect-rouge.vercel.app/",
       link: "https://github.com/TracyK10/OIBSIP/tree/main/purrrfect-landing-page",
