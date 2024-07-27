@@ -5,6 +5,7 @@ import GamePhoto from "../assets/Dragon-game.png";
 import TemperatureConverterImage from "../assets/Temperature-converter.png";
 import WeatherAppImage from "../assets/weather-app.png"
 import RecipeAppImage from "../assets/recipe-app.png"
+import WorldClockImage from "../assets/world-clock.png"
 
 function Projects() {
   const projectArray = [
@@ -55,6 +56,14 @@ function Projects() {
       image: RecipeAppImage,
       demo: "https://tracy-karanja-recipe-generator.netlify.app/",
       link: "https://github.com/TracyK10/recipe-generator",
+    },
+    {
+      title: "World Clock",
+      description:
+        "This project is a web application that displays the current time in different cities around the world. It also allows users to select a city from a dropdown menu and display the current date and time for that city, updating every second.",
+      image: WorldClockImage,
+      demo: "https://karanjatracy-world-clock.netlify.app/",
+      link: "https://github.com/TracyK10/world-clock",
     },
   ];
 
