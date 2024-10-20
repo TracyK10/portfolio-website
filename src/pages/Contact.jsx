@@ -10,7 +10,7 @@ function Contact() {
         <p>
           <a
             href="mailto:chirutracy@gmail.com"
-            className=" text-green-800 hover:text-green-900 transition duration-300 ease-in-out"
+            className=" text-green-800 hover:text-blue-600 transition duration-300 ease-in-out underline"
           >
             chirutracy@gmail.com
           </a>
@@ -21,7 +21,7 @@ function Contact() {
         <p>
           <a
             href="https://github.com/TracyK10"
-            className=" text-green-800 hover:text-green-900 transition duration-300 ease-in-out"
+            className="  text-green-800 hover:text-blue-600 transition duration-300 ease-in-out underline"
           >
             My Github
           </a>
@@ -32,7 +32,7 @@ function Contact() {
         <p>
           <a
             href="https://www.linkedin.com/in/tracy-karanja-24a10027a/"
-            className=" text-green-800 hover:text-green-900 transition duration-300 ease-in-out"
+            className=" text-green-800 hover:text-blue-600 transition duration-300 ease-in-out underline"
           >
             My LinkedIn
           </a>
