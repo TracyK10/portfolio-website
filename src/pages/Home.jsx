@@ -33,23 +33,36 @@ function Home() {
       <header>
         <NavBar />
       </header>
-      <main id="home" className="hero-section flex flex-col md:flex-row justify-between ml-8 md:ml-28 mr-8 md:mr-10 mt-16">
+      <main
+        id="home"
+        className="hero-section flex flex-col md:flex-row justify-between ml-8 md:ml-28 mr-8 md:mr-10 mt-16"
+      >
         <div className="mb-8 md:mb-0">
           <h2>Hello, I am</h2>
-          <h1 className="text-green-800" id="typewriter-name" ref={typewriterRef}></h1>
+          <h1
+            className="text-green-800"
+            id="typewriter-name"
+            ref={typewriterRef}
+          ></h1>
           <h3 className="description py-3 w-full md:w-3/4 font-semi-bold">
-            I'm a multidisciplinary developer and designer <span className="emphasis">(sometimes)</span> with a
-            passion for creating engaging, entertaining user experiences. I
-            mostly do frontend work and <span className="emphasis">occasionally</span> dabble in backend
-            development. ✨
+            I'm a multidisciplinary developer and designer{" "}
+            <span className="emphasis">(sometimes)</span> with a passion for
+            creating engaging, entertaining user experiences. I mostly do
+            frontend work and <span className="emphasis">occasionally</span>{" "}
+            dabble in backend development. ✨
           </h3>
-          <a href="/Tracy Karanja Resume(2).pdf" download="Tracy Karanja Resume(2).pdf">
-            <button className="rounded-full drop-shadow-lg">
-              Download CV
-            </button>
+          <a
+            href="/Tracy Karanja CV_Resume.pdf"
+            download="Tracy Karanja CV_Resume.pdf"
+          >
+            <button className="rounded-full drop-shadow-lg">Download CV</button>
           </a>
         </div>
-        <img src={HeroImage} alt="Hero" className="hero-image w-full md:w-auto ml-0" />
+        <img
+          src={HeroImage}
+          alt="Hero"
+          className="hero-image w-full md:w-auto ml-0"
+        />
       </main>
       <div className="flex justify-center mt-8">
         <FontAwesomeIcon icon={faAngleDown} size="2x" bounce />
