@@ -55,7 +55,7 @@ function Home() {
             href="/Tracy Karanja CV_Resume.pdf"
             download="Tracy Karanja CV_Resume.pdf"
           >
-            <button className="rounded-full drop-shadow-lg">Download CV</button>
+            <button className="rounded-full drop-shadow-lg">Download Resume</button>
           </a>
         </div>
         <img
